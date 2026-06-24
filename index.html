@@ -3,236 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arima Bedside Care - Compassionate Care at Your Bedside</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Arima Bedside Care - Professional Home & Hospital Nursing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        medicalTeal: '#0f766e',
+                        medicalDark: '#111827',
+                        medicalMint: '#0d9488',
+                        medicalLight: '#f0fdfa'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    <!-- Cursor Effect -->
-    <div class="cursor"></div>
-    <div class="cursor-glow"></div>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <h1>Arima</h1>
-                <p>Bedside Care</p>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+    <div class="bg-medicalTeal text-white text-xs sm:text-sm py-2 px-4 flex justify-between items-center">
+        <div><i class="fa-solid fa-clock mr-1"></i> 24/7 Support Available</div>
+        <div class="flex space-x-4">
+            <a href="tel:+256000000000" class="hover:underline"><i class="fa-solid fa-phone mr-1"></i> Call Consultant</a>
+            <a href="mailto:info@arima.com" class="hidden sm:inline hover:underline"><i class="fa-solid fa-envelope mr-1"></i> info@arima.com</a>
+        </div>
+    </div>
+
+    <header class="sticky top-0 bg-white/95 backdrop-blur-md shadow-sm z-50 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2">
+                <div class="bg-medicalTeal text-white p-2 rounded-xl">
+                    <i class="fa-solid fa-heart-pulse text-2xl"></i>
+                </div>
+                <span class="text-xl font-bold text-slate-900 tracking-tight">Arima <span class="text-medicalTeal">Bedside Care</span></span>
+            </a>
+            <nav class="hidden md:flex space-x-8 font-medium text-slate-600">
+                <a href="#about" class="hover:text-medicalTeal transition">About Us</a>
+                <a href="#services" class="hover:text-medicalTeal transition">Services</a>
+                <a href="#pricing" class="hover:text-medicalTeal transition">Care Plans</a>
+                <a href="#book" class="hover:text-medicalTeal transition">Book a Nurse</a>
+            </nav>
+            <div class="flex items-center space-x-3">
+                <a href="https://wa.me/256000000000" target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center transition shadow-sm">
+                    <i class="fa-brands fa-whatsapp text-lg mr-2"></i> WhatsApp Care
+                </a>
             </div>
         </div>
-    </nav>
+    </header>
 
-    <!-- Hero Section with Animated Background -->
-    <section id="home" class="hero">
-        <div class="animated-background">
-            <div class="gradient-orb orb-1"></div>
-            <div class="gradient-orb orb-2"></div>
-            <div class="gradient-orb orb-3"></div>
-        </div>
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">We Care,<br><span class="gradient-text">You Matter</span></h1>
-                <p class="hero-subtitle">Compassionate Care at Your Bedside</p>
-                <p class="hero-description">Experience healthcare reimagined for 2026. Professional, reliable, and deeply compassionate care delivered right to your home.</p>
-                <div class="cta-buttons">
-                    <a href="#contact" class="btn btn-primary">Get Started</a>
-                    <a href="#services" class="btn btn-outline">Explore Services</a>
+    <section class="relative bg-gradient-to-br from-medicalLight via-white to-slate-50 overflow-hidden py-16 lg:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 max-w-xl">
+                <div class="inline-flex items-center bg-teal-100 text-medicalTeal px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase">
+                    ✨ Reliable Bedside Care Since 2015
+                </div>
+                <h1 class="text-4xl sm:text-5xl font-black text-slate-900 leading-tight">
+                    Qualified Nursing Care Right Where You Need It.
+                </h1>
+                <p class="text-lg text-slate-600 leading-relaxed">
+                    From post-surgery recovery to elder care and newborn support, Arima connects your family to trusted, vetted, and compassionate nurses quickly and affordably—at home or in the hospital.
+                </p>
+                <div class="pt-2 flex flex-col sm:flex-row gap-4">
+                    <a href="#book" class="bg-medicalTeal hover:bg-medicalMint text-white text-center px-8 py-4 rounded-xl font-bold transition shadow-lg shadow-teal-700/20">
+                        Request Care Consultation
+                    </a>
+                    <a href="#pricing" class="border-2 border-slate-200 hover:border-slate-300 bg-white text-slate-700 text-center px-8 py-4 rounded-xl font-bold transition">
+                        View Care Packages
+                    </a>
                 </div>
             </div>
-            <div class="hero-visual">
-                <div class="floating-card card-1">
-                    <div class="card-icon"><i class="fas fa-heart"></i></div>
-                    <p>24/7 Care</p>
-                </div>
-                <div class="floating-card card-2">
-                    <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
-                    <p>Certified Staff</p>
-                </div>
-                <div class="floating-card card-3">
-                    <div class="card-icon"><i class="fas fa-star"></i></div>
-                    <p>5-Star Service</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats-section">
-        <div class="container">
-            <div class="stat-card">
-                <h3>500+</h3>
-                <p>Happy Patients</p>
-            </div>
-            <div class="stat-card">
-                <h3>98%</h3>
-                <p>Satisfaction Rate</p>
-            </div>
-            <div class="stat-card">
-                <h3>24/7</h3>
-                <p>Support Available</p>
-            </div>
-            <div class="stat-card">
-                <h3>50+</h3>
-                <p>Expert Caregivers</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section with Glass Morphism -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Our Services</h2>
-                <p class="section-subtitle">Comprehensive healthcare solutions tailored to your needs</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card glass-effect">
-                    <div class="service-header">
-                        <div class="service-icon gradient-bg-1">
-                            <i class="fas fa-bed"></i>
-                        </div>
-                        <h3>Bedside Nursing</h3>
-                    </div>
-                    <p>Professional nursing care delivered at your home with 24/7 availability and emergency response.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Wound care</li>
-                        <li><i class="fas fa-check"></i> Medication management</li>
-                        <li><i class="fas fa-check"></i> Vital monitoring</li>
-                    </ul>
-                </div>
-
-                <div class="service-card glass-effect">
-                    <div class="service-header">
-                        <div class="service-icon gradient-bg-2">
-                            <i class="fas fa-hand-holding-heart"></i>
-                        </div>
-                        <h3>Elderly Care</h3>
-                    </div>
-                    <p>Specialized care for seniors with assistance in daily living and personalized support.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Daily assistance</li>
-                        <li><i class="fas fa-check"></i> Companionship</li>
-                        <li><i class="fas fa-check"></i> Fall prevention</li>
-                    </ul>
-                </div>
-
-                <div class="service-card glass-effect">
-                    <div class="service-header">
-                        <div class="service-icon gradient-bg-3">
-                            <i class="fas fa-clinic-medical"></i>
-                        </div>
-                        <h3>Post-Surgery Care</h3>
-                    </div>
-                    <p>Comprehensive recovery support ensuring smooth healing in the comfort of your home.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Recovery monitoring</li>
-                        <li><i class="fas fa-check"></i> Physical therapy</li>
-                        <li><i class="fas fa-check"></i> Pain management</li>
-                    </ul>
-                </div>
-
-                <div class="service-card glass-effect">
-                    <div class="service-header">
-                        <div class="service-icon gradient-bg-4">
-                            <i class="fas fa-heartbeat"></i>
-                        </div>
-                        <h3>Chronic Care</h3>
-                    </div>
-                    <p>Compassionate management of chronic conditions with focus on comfort and quality of life.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Disease management</li>
-                        <li><i class="fas fa-check"></i> Nutrition support</li>
-                        <li><i class="fas fa-check"></i> Lifestyle coaching</li>
-                    </ul>
-                </div>
-
-                <div class="service-card glass-effect">
-                    <div class="service-header">
-                        <div class="service-icon gradient-bg-5">
-                            <i class="fas fa-smile"></i>
-                        </div>
-                        <h3>Companionship</h3>
-                    </div>
-                    <p>Emotional support and social engagement to enhance mental health and well-being.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Social activities</li>
-                        <li><i class="fas fa-check"></i> Emotional support</li>
-                        <li><i class="fas fa-check"></i> Cognitive engagement</li>
-                    </ul>
-                </div>
-
-                <div class="service-card glass-effect">
-                    <div class="service-header">
-                        <div class="service-icon gradient-bg-6">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <h3>Wellness Support</h3>
-                    </div>
-                    <p>Holistic wellness programs including nutrition, exercise, and mental health support.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check"></i> Nutrition planning</li>
-                        <li><i class="fas fa-check"></i> Exercise guidance</li>
-                        <li><i class="fas fa-check"></i> Mental health</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-content">
-                    <h2 class="section-title">Why Arima?</h2>
-                    <p class="about-text">At Arima Bedside Care, we're revolutionizing healthcare by bringing compassionate, professional care directly to your home. Our mission is simple yet powerful: your comfort is our priority.</p>
-                    <div class="about-features">
-                        <div class="feature-item">
-                            <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+            <div class="relative lg:ml-4">
+                <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-teal-500 to-cyan-500 opacity-20 blur-lg"></div>
+                <div class="relative bg-white border border-slate-100 rounded-2xl p-6 sm:p-8 shadow-xl">
+                    <h3 class="text-xl font-bold text-slate-900 mb-6 flex items-center"><i class="fa-solid fa-user-shield text-medicalTeal mr-3"></i> Why Families Trust Arima</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-teal-50 text-medicalTeal p-3 rounded-xl mt-1"><i class="fa-solid fa-truck-medical text-xl"></i></div>
                             <div>
-                                <h4>Expert Team</h4>
-                                <p>Certified healthcare professionals with years of experience</p>
+                                <h4 class="font-bold text-slate-900">Accessibility</h4>
+                                <p class="text-slate-600 text-sm mt-0.5">We bring qualified professional nursing care directly to your loved one’s bedside.</p>
                             </div>
                         </div>
-                        <div class="feature-item">
-                            <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-teal-50 text-medicalTeal p-3 rounded-xl mt-1"><i class="fa-solid fa-business-time text-xl"></i></div>
                             <div>
-                                <h4>Technology-Driven</h4>
-                                <p>Modern healthcare solutions with real-time monitoring</p>
+                                <h4 class="font-bold text-slate-900">Convenience</h4>
+                                <p class="text-slate-600 text-sm mt-0.5">Skip long waiting lines and expensive transportation. Our nurses adapt to your daily routines.</p>
                             </div>
                         </div>
-                        <div class="feature-item">
-                            <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-teal-50 text-medicalTeal p-3 rounded-xl mt-1"><i class="fa-solid fa-clipboard-check text-xl"></i></div>
                             <div>
-                                <h4>Personalized Care</h4>
-                                <p>Tailored treatment plans for individual needs</p>
+                                <h4 class="font-bold text-slate-900">Accountability</h4>
+                                <p class="text-slate-600 text-sm mt-0.5">Stay up-to-date with routine recovery tracking reports, transparent pricing, and 24/7 dedicated managers.</p>
                             </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon"><i class="fas fa-check-circle"></i></div>
-                            <div>
-                                <h4>Always Available</h4>
-                                <p>24/7 support and emergency response capability</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-visual">
-                    <div class="about-image-placeholder">
-                        <div class="placeholder-content">
-                            <i class="fas fa-heartbeat"></i>
-                            <p>Premium Healthcare</p>
                         </div>
                     </div>
                 </div>
@@ -240,91 +106,170 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-header">
-                <h2 class="section-title">Get in Touch</h2>
-                <p class="section-subtitle">We're here to help. Reach out today.</p>
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">Our Care Solutions</h2>
+                <div class="w-16 h-1 bg-medicalTeal mx-auto mt-4 rounded-full"></div>
+                <p class="text-slate-600 mt-4">Personalized clinical oversight crafted around the dynamic and evolving needs of patients and their families.</p>
             </div>
-            <div class="contact-grid">
-                <div class="contact-card-modern">
-                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
-                    <h3>Call Us</h3>
-                    <a href="tel:+256780236761" class="contact-link">+256 780 236 761</a>
-                    <p>Available 24/7</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="border border-slate-100 bg-slate-50 p-8 rounded-2xl hover:shadow-xl hover:bg-white transition duration-300">
+                    <div class="bg-medicalLight text-medicalTeal w-12 h-12 rounded-xl flex items-center justify-center mb-6"><i class="fa-solid fa-house-user text-xl"></i></div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">In-Home Patient Care</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">Dedicated clinical assistance accelerating recovery profiles safely in a warm, comforting home space post-discharge.</p>
+                    <ul class="text-xs text-slate-500 space-y-2"><li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Medication Management</li><li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Vital Signs Monitoring</li></ul>
                 </div>
-                <div class="contact-card-modern">
-                    <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
-                    <h3>WhatsApp</h3>
-                    <a href="https://wa.me/256705655889" target="_blank" class="contact-link">070 565 5889</a>
-                    <p>Quick response</p>
+                <div class="border border-slate-100 bg-slate-50 p-8 rounded-2xl hover:shadow-xl hover:bg-white transition duration-300">
+                    <div class="bg-medicalLight text-medicalTeal w-12 h-12 rounded-xl flex items-center justify-center mb-6"><i class="fa-solid fa-baby-carriage text-xl"></i></div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Maternity & Postnatal Care</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">Comprehensive physical and mental structural support maps for expectant or new mothers welcoming newborn infants.</p>
+                    <ul class="text-xs text-slate-500 space-y-2"><li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Breastfeeding Guidance</li><li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Postpartum Screenings</li></ul>
                 </div>
-                <div class="contact-card-modern">
-                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                    <h3>Email</h3>
-                    <a href="mailto:arimamedicalcenter@gmail.com" class="contact-link">arimamedicalcenter@gmail.com</a>
-                    <p>We reply within 2 hours</p>
+                <div class="border border-slate-100 bg-slate-50 p-8 rounded-2xl hover:shadow-xl hover:bg-white transition duration-300">
+                    <div class="bg-medicalLight text-medicalTeal w-12 h-12 rounded-xl flex items-center justify-center mb-6"><i class="fa-solid fa-hospital-user text-xl"></i></div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">In-Hospital Support</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">Consistent, uninterrupted bedside monitoring companionship relief ensuring constant supervision while admitted inside clinics.</p>
+                    <ul class="text-xs text-slate-500 space-y-2"><li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> 24/7 Ward Companionship</li><li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Direct Doctor Liaison</li></ul>
                 </div>
-                <div class="contact-card-modern">
-                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-                    <h3>Visit Us</h3>
-                    <p class="contact-address">Whitlock Plaza RM24<br>Bukoto-Kisaasi Rd<br>Kampala - Uganda</p>
-                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">Flexible Care Plans</h2>
+                <div class="w-16 h-1 bg-medicalTeal mx-auto mt-4 rounded-full"></div>
+                <p class="text-slate-600 mt-4">Transparent tiered structures tailored perfectly across budgets and recovery windows. Rates optimize with scale.</p>
             </div>
 
-            <!-- Contact Form -->
-            <div class="contact-form-wrapper">
-                <h3>Send us a Message</h3>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
+            <div class="grid md:grid-cols-3 gap-8 items-stretch">
+                <div class="bg-white border border-slate-100 rounded-2xl p-8 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-900">Daily Care Plan</h3>
+                        <div class="mt-4 mb-6"><span class="text-3xl font-black text-slate-900">UGX 85,000</span><span class="text-slate-500 text-sm"> / Day</span></div>
+                        <p class="text-sm text-slate-600 mb-6">Excellent short intervention options helping manage transitional timelines or urgent shifts.</p>
+                        <ul class="space-y-3 border-t border-slate-100 pt-6 text-sm text-slate-600 mb-8">
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-medicalTeal mr-2"></i> 1 Vetted Bedside Nurse</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-medicalTeal mr-2"></i> Hygiene & Mobility Assistance</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-medicalTeal mr-2"></i> Home or Hospital visits</li>
+                        </ul>
                     </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
+                    <a href="#book" class="block text-center border-2 border-medicalTeal text-medicalTeal hover:bg-medicalTeal hover:text-white font-bold py-3 rounded-xl transition">Book Daily</a>
+                </div>
+
+                <div class="bg-white border-2 border-medicalTeal rounded-2xl p-8 shadow-md flex flex-col justify-between relative transform lg:-translate-y-2">
+                    <div class="absolute top-0 right-1/2 translate-x-1/2 -translate-y-1/2 bg-medicalTeal text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Most Popular</div>
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-900">Weekly Care Plan</h3>
+                        <div class="mt-4 mb-6"><span class="text-3xl font-black text-slate-900">UGX 400,000</span><span class="text-slate-500 text-sm"> / Week</span></div>
+                        <p class="text-sm text-slate-600 mb-6">Designed for structured post-discharge observations running sequentially up to 14 days.</p>
+                        <ul class="space-y-3 border-t border-slate-100 pt-6 text-sm text-slate-600 mb-8">
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-medicalTeal mr-2"></i> 1-2 Rotational Nurses</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-medicalTeal mr-2"></i> Dedicated Relationship Manager</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-medicalTeal mr-2"></i> Psychosocial Support Visit</li>
+                        </ul>
                     </div>
-                    <div class="form-group">
-                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <a href="#book" class="block text-center bg-medicalTeal hover:bg-medicalMint text-white font-bold py-3 rounded-xl transition">Book Weekly</a>
+                </div>
+
+                <div class="bg-white border border-slate-100 rounded-2xl p-8 shadow-sm flex flex-col justify-between hover:shadow-md transition">
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-900">Monthly Long-Term Plan</h3>
+                        <div class="mt-4 mb-6"><span class="text-3xl font-black text-slate-900">UGX 1,400,000</span><span class="text-slate-500 text-sm"> / Month</span></div>
+                        <p class="text-sm text-slate-600 mb-6">Maximum value and continuous care layout supporting elderly care or chronic diagnoses.</p>
+                        <ul class="space-y-3 border-t border-slate-100 pt-6 text-sm text-slate-600 mb-8">
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-medicalTeal mr-2"></i> 2 Full-Time Interchanging Nurses</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-medicalTeal mr-2"></i> Continuous Recovery Tracking</li>
+                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-medicalTeal mr-2"></i> Swap-Care Nurse Guarantee</li>
+                        </ul>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <a href="#book" class="block text-center border-2 border-medicalTeal text-medicalTeal hover:bg-medicalTeal hover:text-white font-bold py-3 rounded-xl transition">Book Monthly</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="book" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-50 rounded-3xl p-8 sm:p-12 border border-slate-100 shadow-sm">
+                <div class="text-center max-w-xl mx-auto mb-10">
+                    <h2 class="text-3xl font-bold text-slate-900">Request Care Consultation</h2>
+                    <p class="text-slate-600 text-sm mt-2">Fill in your information below. A medical advisor will contact you immediately to map out your care plan.</p>
+                </div>
+
+                <form class="space-y-6">
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-2">Your Name *</label>
+                            <input type="text" required placeholder="John Doe" class="w-full bg-white border border-slate-200 focus:border-medicalTeal focus:ring-2 focus:ring-teal-100 rounded-xl px-4 py-3 outline-none transition text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-2">Contact Number *</label>
+                            <input type="tel" required placeholder="+256..." class="w-full bg-white border border-slate-200 focus:border-medicalTeal focus:ring-2 focus:ring-teal-100 rounded-xl px-4 py-3 outline-none transition text-sm">
+                        </div>
+                    </div>
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-2">Select Service *</label>
+                            <select required class="w-full bg-white border border-slate-200 focus:border-medicalTeal focus:ring-2 focus:ring-teal-100 rounded-xl px-4 py-3 outline-none transition text-sm text-slate-600">
+                                <option value="">-- Choose Option --</option>
+                                <option>In Home Patient Care</option>
+                                <option>In Hospital Bedside Support</option>
+                                <option>Maternity & Postbirth Care</option>
+                                <option>Palliative Care</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-2">Preferred Package *</label>
+                            <select required class="w-full bg-white border border-slate-200 focus:border-medicalTeal focus:ring-2 focus:ring-teal-100 rounded-xl px-4 py-3 outline-none transition text-sm text-slate-600">
+                                <option value="">-- Choose Package --</option>
+                                <option>Daily Plan (UGX 85,000/=)</option>
+                                <option>Weekly Plan (UGX 400,000/=)</option>
+                                <option>Monthly Plan (UGX 1,400,000/=)</option>
+                                <option>Custom Extended Request</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-2">Patient Clinical History / Extra Info</label>
+                        <textarea rows="4" placeholder="Share any relevant clinical details or specific requests here..." class="w-full bg-white border border-slate-200 focus:border-medicalTeal focus:ring-2 focus:ring-teal-100 rounded-xl px-4 py-3 outline-none transition text-sm"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-medicalTeal hover:bg-medicalMint text-white font-bold py-4 rounded-xl shadow-lg shadow-teal-700/10 transition mt-4">
+                        Submit Secure Booking
+                    </button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Arima Bedside Care</h4>
-                    <p>Your Comfort. Our Priority. Always.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                    </div>
+    <footer class="bg-medicalDark text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8 mb-8">
+            <div class="space-y-4">
+                <span class="text-xl font-bold text-white">Arima Bedside Care</span>
+                <p class="text-sm leading-relaxed max-w-sm">Revolutionizing delivery models for home healthcare nursing solutions. Providing families peace of mind since 2015.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Quick Navigation</h4>
+                <div class="grid grid-cols-2 gap-2 text-sm">
+                    <a href="#about" class="hover:text-white transition">About Profile</a>
+                    <a href="#services" class="hover:text-white transition">Our Services</a>
+                    <a href="#pricing" class="hover:text-white transition">Pricing Plans</a>
+                    <a href="#book" class="hover:text-white transition">Consultation</a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Arima Bedside Care (U) Ltd. All rights reserved.</p>
+            <div>
+                <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Connect Directly</h4>
+                <p class="text-sm mb-2"><i class="fa-solid fa-location-dot mr-2 text-medicalMint"></i> Kampala, Uganda</p>
+                <p class="text-sm"><i class="fa-solid fa-envelope mr-2 text-medicalMint"></i> info@arima.com</p>
             </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-800 pt-8 text-center text-xs">
+            &copy; 2026 Arima Bedside Care. All rights reserved. Inspired by professional health-delivery structures.
         </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
