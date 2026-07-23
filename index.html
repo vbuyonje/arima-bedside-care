@@ -1,298 +1,647 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arima Bedside Care - Professional Home & Hospital Nursing</title>
+    <title>Arima Bedside Care | Compassionate Care At Your Bedside</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        medicalTeal: '#0f766e',
-                        medicalDark: '#111827',
-                        medicalMint: '#0d9488',
-                        medicalLight: '#f0fdfa'
+                        brandBlue: '#0066cc',
+                        brandBlueDark: '#004c99',
+                        brandRed: '#d9232a',
+                        brandGreen: '#8cc63f',
+                        brandGreenDark: '#75aa30',
+                    },
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
                     }
                 }
             }
         }
     </script>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+<body class="font-sans text-slate-700 bg-slate-50 antialiased selection:bg-brandBlue selection:text-white">
 
-    <div class="bg-medicalTeal text-white text-xs sm:text-sm py-2 px-4 flex justify-between items-center">
-        <div><i class="fa-solid fa-clock mr-1"></i> 24/7 Support Available</div>
-        <div class="flex space-x-4">
-            <a href="tel:+25678123456" class="hover:underline"><i class="fa-solid fa-phone mr-1"></i> Call Consultant</a>
-            <a href="mailto:info@arima.com" class="hidden sm:inline hover:underline"><i class="fa-solid fa-envelope mr-1"></i> info@arima.com</a>
+    <!-- Top Utility Bar -->
+    <div class="bg-slate-900 text-slate-300 text-sm py-2.5 px-4 sm:px-8 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2 text-center md:text-left">
+            <div class="flex flex-wrap items-center justify-center gap-6 text-xs sm:text-sm">
+                <a href="tel:0780236761" class="hover:text-white transition flex items-center gap-2">
+                    <i class="fa-solid fa-phone text-brandGreen"></i> 0780236761
+                </a>
+                <a href="https://wa.me/256705655889" target="_blank" class="hover:text-white transition flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-emerald-400"></i> 0705655889
+                </a>
+                <a href="mailto:care@arimabedside.com" class="hover:text-white transition hidden sm:flex items-center gap-2">
+                    <i class="fa-regular fa-envelope text-brandBlue"></i> care@arimabedside.com
+                </a>
+            </div>
+            <div class="flex items-center gap-4 text-xs sm:text-sm">
+                <span class="text-slate-400"><i class="fa-regular fa-clock text-brandGreen mr-1"></i> 8am - 8pm (On-call 24/7)</span>
+                <div class="flex items-center gap-3 border-l border-slate-700 pl-4">
+                    <a href="https://www.facebook.com/share/1E3b6BGngr/" target="_blank" class="text-slate-400 hover:text-brandBlue transition text-base"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@arima.bedside.car?_r=1&_t=ZS-98FUNuHnE25" target="_blank" class="text-slate-400 hover:text-white transition text-base"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- <header class="sticky top-0 bg-white/95 backdrop-blur-md shadow-sm z-50 transition-all">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
-            <a href="#" class="flex items-center space-x-2">
-                <div class="bg-medicalTeal text-white p-2 rounded-xl">
-                    <i class="fa-solid fa-heart-pulse text-2xl"></i>
-                </div>
-                <span class="text-xl font-bold text-slate-900 tracking-tight">Arima <span class="text-medicalTeal">Bedside Care</span></span>
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3">
+                <img src="arima logo@3x.jpg" alt="Arima Bedside Care Logo" class="h-12 sm:h-14 w-auto object-contain">
             </a>
-            <nav class="hidden md:flex space-x-8 font-medium text-slate-600">
-                <a href="#about" class="hover:text-medicalTeal transition">About Us</a>
-                <a href="#services" class="hover:text-medicalTeal transition">Services</a>
-                <a href="#pricing" class="hover:text-medicalTeal transition">Care Plans</a>
-                <a href="#book" class="hover:text-medicalTeal transition">Book a Nurse</a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center gap-8 font-semibold text-slate-600 text-sm">
+                <a href="#about" class="hover:text-brandBlue transition">About Us</a>
+                <a href="#services" class="hover:text-brandBlue transition">Services</a>
+                <a href="#packages" class="hover:text-brandBlue transition">Care Packages</a>
+                <a href="#contact" class="hover:text-brandBlue transition">Contact</a>
             </nav>
-            <div class="flex items-center space-x-3">
-                <a href="https://wa.me/25678123456" target="_blank" class="bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center transition shadow-sm">
-                    <i class="fa-brands fa-whatsapp text-lg mr-2"></i> WhatsApp Care
+
+            <!-- Call CTA Button -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="tel:0780236761" class="bg-brandRed hover:bg-red-700 text-white font-bold px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all duration-300 flex items-center gap-2 text-sm">
+                    <i class="fa-solid fa-phone-flip animate-pulse"></i> Call Now: 0780236761
                 </a>
             </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="lg:hidden text-slate-700 focus:outline-none p-2" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
         </div>
-    </header> -->
-    <header class="sticky top-0 bg-white/95 backdrop-blur-md shadow-sm z-50 transition-all">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex justify-between items-center">
-            
-            <a href="#" class="flex items-center space-x-3 group">
-                <img src="logo.png" 
-                     alt="Arima Bedside Care Logo" 
-                     class="h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-                     onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'bg-gradient-to-br from-[#0153a5] to-[#c12026] text-white p-2 rounded-xl\'><i class=\'fa-solid fa-heart-pulse text-2xl\'></i></div>';">
-            </a>
 
-            <nav class="hidden md:flex space-x-8 font-medium text-slate-600">
-                <a href="#services" class="hover:text-[#0153a5] transition">Services</a>
-                <a href="#pricing" class="hover:text-[#0153a5] transition">Care Plans</a>
-                <a href="#book" class="hover:text-[#0153a5] transition">Book a Nurse</a>
-            </nav>
-
-            <div class="flex items-center space-x-3">
-                <a href="https://wa.me/25678123456" target="_blank" class="bg-[#8bc53f] hover:bg-[#7ab234] text-white px-4 py-2 rounded-full text-sm font-semibold flex items-center transition shadow-sm">
-                    <i class="fa-brands fa-whatsapp text-lg mr-2"></i> WhatsApp Care
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-4">
+            <a href="#about" class="block font-medium text-slate-700 hover:text-brandBlue py-1">About Us</a>
+            <a href="#services" class="block font-medium text-slate-700 hover:text-brandBlue py-1">Services</a>
+            <a href="#packages" class="block font-medium text-slate-700 hover:text-brandBlue py-1">Care Packages</a>
+            <a href="#contact" class="block font-medium text-slate-700 hover:text-brandBlue py-1">Contact</a>
+            <div class="pt-2 flex flex-col gap-2">
+                <a href="tel:0780236761" class="w-full text-center bg-brandRed text-white font-bold py-3 rounded-xl">
+                    <i class="fa-solid fa-phone-flip mr-2"></i> Call Now: 0780236761
+                </a>
+                <a href="https://wa.me/256705655889" target="_blank" class="w-full text-center bg-emerald-600 text-white font-bold py-3 rounded-xl">
+                    <i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp Us
                 </a>
             </div>
-
         </div>
     </header>
 
-    <section class="relative bg-gradient-to-br from-medicalLight via-white to-slate-50 overflow-hidden py-16 lg:py-24">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6 max-w-xl">
-                <div class="inline-flex items-center bg-teal-100 text-medicalTeal px-3 py-1 rounded-full text-xs font-semibold tracking-wide uppercase">
-                    ✨ Reliable Bedside Care Since 2025
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-blue-50 via-white to-emerald-50/40 py-16 md:py-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold bg-emerald-100 text-emerald-800 border border-emerald-200">
+                        <i class="fa-solid fa-heart-pulse text-brandRed"></i> Trusted Home & Bedside Nursing in Kampala
+                    </span>
+                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight tracking-tight">
+                        Compassionate Care <br class="hidden sm:inline"><span class="text-brandBlue">At Your Bedside.</span>
+                    </h1>
+                    <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Dedicated, highly skilled bedside care for your loved ones at home or in hospital settings. From post-surgery recovery to elderly and newborn care, we ensure round-the-clock comfort and peace of mind.
+                    </p>
+                    <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="tel:0780236761" class="w-full sm:w-auto bg-brandRed hover:bg-red-700 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg shadow-red-500/20 hover:shadow-red-500/30 transition-all flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-phone"></i> Call Now: 0780236761
+                        </a>
+                        <a href="https://wa.me/256705655889" target="_blank" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg shadow-emerald-600/20 transition-all flex items-center justify-center gap-3">
+                            <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                        </a>
+                    </div>
+                    
+                    <!-- Quick Badges -->
+                    <div class="pt-6 border-t border-slate-200/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0 text-center">
+                        <div>
+                            <p class="text-xl sm:text-2xl font-bold text-brandBlue">24/7</p>
+                            <p class="text-xs text-slate-500">On-Call Support</p>
+                        </div>
+                        <div>
+                            <p class="text-xl sm:text-2xl font-bold text-brandGreen">100%</p>
+                            <p class="text-xs text-slate-500">Personalized Care</p>
+                        </div>
+                        <div>
+                            <p class="text-xl sm:text-2xl font-bold text-brandRed">Professional</p>
+                            <p class="text-xs text-slate-500">Caregivers & Nurses</p>
+                        </div>
+                    </div>
                 </div>
-                <h1 class="text-4xl sm:text-5xl font-black text-slate-900 leading-tight">
-                    Qualified Nursing Care Right Where You Need It.
-                </h1>
-                <p class="text-lg text-slate-600 leading-relaxed">
-                    From post-surgery recovery to elder care and newborn support, Arima connects your family to trusted, vetted, and compassionate nurses quickly and affordably—at home or in the hospital.
+
+                <!-- Hero Graphic / Highlight Box -->
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md bg-white rounded-2xl shadow-xl border border-slate-100 p-6 sm:p-8 space-y-6">
+                        <div class="w-16 h-16 rounded-2xl bg-blue-50 text-brandBlue flex items-center justify-center text-3xl font-bold">
+                            <i class="fa-solid fa-user-nurse"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900">Need Immediate Bedside Support?</h3>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Whether you need day monitoring, emergency bedside support, or continuous home recovery care, our skilled professionals are ready to assist.
+                        </p>
+                        <ul class="space-y-3 text-sm text-slate-700">
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-brandGreen text-base"></i> Hospital Attendants & Home Nursing
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-brandGreen text-base"></i> Vital Signs & Medication Oversight
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <i class="fa-solid fa-circle-check text-brandGreen text-base"></i> Specialized Maternal & Newborn Care
+                            </li>
+                        </ul>
+                        <div class="pt-2">
+                            <a href="#packages" class="block w-full text-center bg-slate-900 hover:bg-slate-800 text-white font-semibold py-3 rounded-lg transition">View Rates & Packages</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center space-y-4">
+                <span class="text-brandBlue font-extrabold uppercase tracking-wider text-xs sm:text-sm">About Arima Bedside Care</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Your Trusted Partner in Compassionate Health Support</h2>
+                <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+                    At Arima Bedside Care, we understand that health journeys require patience, specialized attention, and dignity. Based in Kampala, Uganda, we bridge the gap between hospital-level monitoring and the comfort of your home.
                 </p>
-                <div class="pt-2 flex flex-col sm:flex-row gap-4">
-                    <a href="#book" class="bg-medicalTeal hover:bg-medicalMint text-white text-center px-8 py-4 rounded-xl font-bold transition shadow-lg shadow-teal-700/20">
-                        Request Care Consultation
-                    </a>
-                    <a href="#pricing" class="border-2 border-slate-200 hover:border-slate-300 bg-white text-slate-700 text-center px-8 py-4 rounded-xl font-bold transition">
-                        View Care Packages
-                    </a>
-                </div>
             </div>
-            <div class="relative lg:ml-4">
-                <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-teal-500 to-cyan-500 opacity-20 blur-lg"></div>
-                <div class="relative bg-white border border-slate-100 rounded-2xl p-6 sm:p-8 shadow-xl">
-                    <h3 class="text-xl font-bold text-slate-900 mb-6 flex items-center"><i class="fa-solid fa-user-shield text-medicalTeal mr-3"></i> Why Families Trust Arima</h3>
-                    <div class="space-y-6">
-                        <div class="flex items-start space-x-4">
-                            <div class="bg-teal-50 text-medicalTeal p-3 rounded-xl mt-1"><i class="fa-solid fa-truck-medical text-xl"></i></div>
-                            <div>
-                                <h4 class="font-bold text-slate-900">Accessibility</h4>
-                                <p class="text-slate-600 text-sm mt-0.5">We bring qualified professional nursing care directly to your loved one’s bedside.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <div class="bg-teal-50 text-medicalTeal p-3 rounded-xl mt-1"><i class="fa-solid fa-business-time text-xl"></i></div>
-                            <div>
-                                <h4 class="font-bold text-slate-900">Convenience</h4>
-                                <p class="text-slate-600 text-sm mt-0.5">Skip long waiting lines and expensive transportation. Our nurses adapt to your daily routines.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start space-x-4">
-                            <div class="bg-teal-50 text-medicalTeal p-3 rounded-xl mt-1"><i class="fa-solid fa-clipboard-check text-xl"></i></div>
-                            <div>
-                                <h4 class="font-bold text-slate-900">Accountability</h4>
-                                <p class="text-slate-600 text-sm mt-0.5">Stay up-to-date with routine recovery tracking reports, transparent pricing, and 24/7 dedicated managers.</p>
-                            </div>
-                        </div>
+
+            <div class="mt-14 grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:border-blue-200 transition">
+                    <div class="w-12 h-12 bg-blue-100 text-brandBlue rounded-xl flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-heart"></i>
                     </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Empathetic Care</h3>
+                    <p class="text-sm text-slate-600">We treat every client with empathy, respect, and unconditional kindness, fostering warm companionship alongside personal assistance.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:border-emerald-200 transition">
+                    <div class="w-12 h-12 bg-emerald-100 text-brandGreenDark rounded-xl flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Qualified Caregivers</h3>
+                    <p class="text-sm text-slate-600">Our caregivers are professionally trained to handle vital sign checks, wound care management, medication schedules, and daily living needs.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 hover:border-red-200 transition">
+                    <div class="w-12 h-12 bg-red-100 text-brandRed rounded-xl flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Flexible Coverage</h3>
+                    <p class="text-sm text-slate-600">Choose between 12-hour daytime coverage or 24-hour continuous care packages designed around your family’s routine and budget.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services" class="py-20 bg-white">
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-20 bg-slate-50 border-y border-slate-200/60">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">Our Care Solutions</h2>
-                <div class="w-16 h-1 bg-medicalTeal mx-auto mt-4 rounded-full"></div>
-                <p class="text-slate-600 mt-4">Personalized clinical oversight crafted around the dynamic and evolving needs of patients and their families.</p>
+            <div class="text-center space-y-4 mb-14">
+                <span class="text-brandRed font-extrabold uppercase tracking-wider text-xs sm:text-sm">What We Offer</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Comprehensive Bedside Services</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto text-base"> Tailored caregiving solutions to meet individual medical and personal needs.</p>
             </div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="border border-slate-100 bg-slate-50 p-8 rounded-2xl hover:shadow-xl hover:bg-white transition duration-300">
-                    <div class="bg-medicalLight text-medicalTeal w-12 h-12 rounded-xl flex items-center justify-center mb-6"><i class="fa-solid fa-house-user text-xl"></i></div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">In-Home Patient Care</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-4">Dedicated clinical assistance accelerating recovery profiles safely in a warm, comforting home space post-discharge.</p>
-                    <ul class="text-xs text-slate-500 space-y-2"><li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Medication Management</li><li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Vital Signs Monitoring</li></ul>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-50 text-brandBlue rounded-xl flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-bed-pulse"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Bedside Nursing Care</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Dedicated personal nursing for hospital inpatients or home-bound individuals requiring vital signs tracking, wound dressing, and routine medication management.</p>
                 </div>
-                <div class="border border-slate-100 bg-slate-50 p-8 rounded-2xl hover:shadow-xl hover:bg-white transition duration-300">
-                    <div class="bg-medicalLight text-medicalTeal w-12 h-12 rounded-xl flex items-center justify-center mb-6"><i class="fa-solid fa-baby-carriage text-xl"></i></div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Maternity & Postnatal Care</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-4">Comprehensive physical and mental structural support maps for expectant or new mothers welcoming newborn infants.</p>
-                    <ul class="text-xs text-slate-500 space-y-2"><li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Breastfeeding Guidance</li><li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Postpartum Screenings</li></ul>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-emerald-50 text-brandGreenDark rounded-xl flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-person-cane"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Elderly & Home Care</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Support for senior citizens seeking dignity and comfort in their own homes. Includes grooming, feeding, mobility assistance, and companionship.</p>
                 </div>
-                <div class="border border-slate-100 bg-slate-50 p-8 rounded-2xl hover:shadow-xl hover:bg-white transition duration-300">
-                    <div class="bg-medicalLight text-medicalTeal w-12 h-12 rounded-xl flex items-center justify-center mb-6"><i class="fa-solid fa-hospital-user text-xl"></i></div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">In-Hospital Support</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-4">Consistent, uninterrupted bedside monitoring companionship relief ensuring constant supervision while admitted inside clinics.</p>
-                    <ul class="text-xs text-slate-500 space-y-2"><li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> 24/7 Ward Companionship</li><li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Direct Doctor Liaison</li></ul>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-red-50 text-brandRed rounded-xl flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-kit-medical"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Post-Surgery & Recovery Care</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Specialized post-op care to minimize complications, assist with mobility, monitor healing wounds, and schedule doctor follow-ups.</p>
                 </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Palliative & Chronic Care</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Gentle, symptom-focused care for patients navigating chronic illness, prioritizing comfort, dignity, pain oversight, and family reassurance.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-baby-carriage"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Pre & Post-Natal Care</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Specialized support for expectant and new mothers. Includes maternal vital monitoring, infant care, practical feeding guidance, and vaccination alerts.</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-teal-50 text-teal-600 rounded-xl flex items-center justify-center text-2xl mb-5">
+                        <i class="fa-solid fa-comments font-bold"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Companionship & Daily Living</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Emotional support, light household assistance, nutrition planning, and friendly interaction to improve quality of life and mental well-being.</p>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section id="pricing" class="py-20 bg-slate-50">
+    <!-- Packages Section -->
+    <section id="packages" class="py-16 md:py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900">Flexible Care Plans</h2>
-                <div class="w-16 h-1 bg-medicalTeal mx-auto mt-4 rounded-full"></div>
-                <p class="text-slate-600 mt-4">Transparent tiered structures tailored perfectly across budgets and recovery windows. Rates optimize with scale.</p>
+            <div class="text-center space-y-4 mb-10">
+                <span class="text-brandGreenDark font-extrabold uppercase tracking-wider text-xs sm:text-sm">Pricing & Plans</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Transparent Care Packages</h2>
+                <p class="text-slate-600 max-w-xl mx-auto text-base">Select the level of care that suits your loved one’s unique needs.</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8 items-stretch">
-                <div class="bg-white border border-slate-100 rounded-2xl p-8 shadow-sm flex flex-col justify-between hover:shadow-md transition">
-                    <div>
-                        <h3 class="text-lg font-bold text-slate-900">Daily Care Plan</h3>
-                        <div class="mt-4 mb-6"><span class="text-3xl font-black text-slate-900">UGX 85,000</span><span class="text-slate-500 text-sm"> / Day</span></div>
-                        <p class="text-sm text-slate-600 mb-6">Excellent short intervention options helping manage transitional timelines or urgent shifts.</p>
-                        <ul class="space-y-3 border-t border-slate-100 pt-6 text-sm text-slate-600 mb-8">
-                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-medicalTeal mr-2"></i> 1 Vetted Bedside Nurse</li>
-                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-medicalTeal mr-2"></i> Hygiene & Mobility Assistance</li>
-                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-medicalTeal mr-2"></i> Home or Hospital visits</li>
-                        </ul>
-                    </div>
-                    <a href="#book" class="block text-center border-2 border-medicalTeal text-medicalTeal hover:bg-medicalTeal hover:text-white font-bold py-3 rounded-xl transition">Book Daily</a>
-                </div>
-
-                <div class="bg-white border-2 border-medicalTeal rounded-2xl p-8 shadow-md flex flex-col justify-between relative transform lg:-translate-y-2">
-                    <div class="absolute top-0 right-1/2 translate-x-1/2 -translate-y-1/2 bg-medicalTeal text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Most Popular</div>
-                    <div>
-                        <h3 class="text-lg font-bold text-slate-900">Weekly Care Plan</h3>
-                        <div class="mt-4 mb-6"><span class="text-3xl font-black text-slate-900">UGX 400,000</span><span class="text-slate-500 text-sm"> / Week</span></div>
-                        <p class="text-sm text-slate-600 mb-6">Designed for structured post-discharge observations running sequentially up to 14 days.</p>
-                        <ul class="space-y-3 border-t border-slate-100 pt-6 text-sm text-slate-600 mb-8">
-                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-medicalTeal mr-2"></i> 1-2 Rotational Nurses</li>
-                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-medicalTeal mr-2"></i> Dedicated Relationship Manager</li>
-                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-medicalTeal mr-2"></i> Psychosocial Support Visit</li>
-                        </ul>
-                    </div>
-                    <a href="#book" class="block text-center bg-medicalTeal hover:bg-medicalMint text-white font-bold py-3 rounded-xl transition">Book Weekly</a>
-                </div>
-
-                <div class="bg-white border border-slate-100 rounded-2xl p-8 shadow-sm flex flex-col justify-between hover:shadow-md transition">
-                    <div>
-                        <h3 class="text-lg font-bold text-slate-900">Monthly Long-Term Plan</h3>
-                        <div class="mt-4 mb-6"><span class="text-3xl font-black text-slate-900">UGX 1,400,000</span><span class="text-slate-500 text-sm"> / Month</span></div>
-                        <p class="text-sm text-slate-600 mb-6">Maximum value and continuous care layout supporting elderly care or chronic diagnoses.</p>
-                        <ul class="space-y-3 border-t border-slate-100 pt-6 text-sm text-slate-600 mb-8">
-                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-medicalTeal mr-2"></i> 2 Full-Time Interchanging Nurses</li>
-                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-medicalTeal mr-2"></i> Continuous Recovery Tracking</li>
-                            <li class="flex items-center"><i class="fa-solid fa-circle-check text-medicalTeal mr-2"></i> Swap-Care Nurse Guarantee</li>
-                        </ul>
-                    </div>
-                    <a href="#book" class="block text-center border-2 border-medicalTeal text-medicalTeal hover:bg-medicalTeal hover:text-white font-bold py-3 rounded-xl transition">Book Monthly</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="book" class="py-20 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-slate-50 rounded-3xl p-8 sm:p-12 border border-slate-100 shadow-sm">
-                <div class="text-center max-w-xl mx-auto mb-10">
-                    <h2 class="text-3xl font-bold text-slate-900">Request Care Consultation</h2>
-                    <p class="text-slate-600 text-sm mt-2">Fill in your information below. A medical advisor will contact you immediately to map out your care plan.</p>
-                </div>
-
-                <form class="space-y-6">
-                    <div class="grid sm:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-2">Your Name *</label>
-                            <input type="text" required placeholder="John Doe" class="w-full bg-white border border-slate-200 focus:border-medicalTeal focus:ring-2 focus:ring-teal-100 rounded-xl px-4 py-3 outline-none transition text-sm">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-2">Contact Number *</label>
-                            <input type="tel" required placeholder="+256..." class="w-full bg-white border border-slate-200 focus:border-medicalTeal focus:ring-2 focus:ring-teal-100 rounded-xl px-4 py-3 outline-none transition text-sm">
-                        </div>
-                    </div>
-                    <div class="grid sm:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-2">Select Service *</label>
-                            <select required class="w-full bg-white border border-slate-200 focus:border-medicalTeal focus:ring-2 focus:ring-teal-100 rounded-xl px-4 py-3 outline-none transition text-sm text-slate-600">
-                                <option value="">-- Choose Option --</option>
-                                <option>In Home Patient Care</option>
-                                <option>In Hospital Bedside Support</option>
-                                <option>Maternity & Postbirth Care</option>
-                                <option>Palliative Care</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-2">Preferred Package *</label>
-                            <select required class="w-full bg-white border border-slate-200 focus:border-medicalTeal focus:ring-2 focus:ring-teal-100 rounded-xl px-4 py-3 outline-none transition text-sm text-slate-600">
-                                <option value="">-- Choose Package --</option>
-                                <option>Daily Plan (UGX 85,000/=)</option>
-                                <option>Weekly Plan (UGX 400,000/=)</option>
-                                <option>Monthly Plan (UGX 1,400,000/=)</option>
-                                <option>Custom Extended Request</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-600 mb-2">Patient Clinical History / Extra Info</label>
-                        <textarea rows="4" placeholder="Share any relevant clinical details or specific requests here..." class="w-full bg-white border border-slate-200 focus:border-medicalTeal focus:ring-2 focus:ring-teal-100 rounded-xl px-4 py-3 outline-none transition text-sm"></textarea>
-                    </div>
-                    <button type="submit" class="w-full bg-medicalTeal hover:bg-medicalMint text-white font-bold py-4 rounded-xl shadow-lg shadow-teal-700/10 transition mt-4">
-                        Submit Secure Booking
+            <!-- Tab Switcher -->
+            <div class="flex justify-center mb-12">
+                <div class="bg-slate-100 p-1.5 rounded-2xl inline-flex gap-2 border border-slate-200">
+                    <button id="general-tab-btn" onclick="switchTab('general')" class="px-6 py-2.5 rounded-xl font-bold text-sm transition-all duration-300 bg-white text-brandBlue shadow-sm">
+                        General Packages
                     </button>
-                </form>
+                    <button id="mummy-tab-btn" onclick="switchTab('mummy')" class="px-6 py-2.5 rounded-xl font-bold text-sm text-slate-600 hover:text-slate-900 transition-all duration-300">
+                        Pre / Post-Natal Packages
+                    </button>
+                </div>
+            </div>
+
+            <!-- General Packages View -->
+            <div id="general-packages" class="grid lg:grid-cols-3 gap-8">
+                
+                <!-- Care360 Plan -->
+                <div class="bg-slate-50 border border-slate-200 rounded-3xl p-8 flex flex-col justify-between hover:border-brandBlue transition">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-2xl font-bold text-slate-900">Care360 Plan</h3>
+                            <span class="text-xs font-bold px-3 py-1 bg-blue-100 text-brandBlue rounded-full">12-Hour Day</span>
+                        </div>
+                        <p class="text-xs text-slate-500 mb-6">Ideal for daytime support & medication schedules.</p>
+                        <div class="mb-6">
+                            <span class="text-3xl font-extrabold text-slate-900">UGX 50,000</span>
+                            <span class="text-slate-500 text-sm"> / day</span>
+                        </div>
+                        <ul class="space-y-3.5 text-xs sm:text-sm text-slate-600 mb-8">
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brandGreen mt-1"></i> Medication administration according to schedule</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brandGreen mt-1"></i> Routine monitoring of BP and blood sugar</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brandGreen mt-1"></i> Assistance with meals and hydration</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brandGreen mt-1"></i> Personal hygiene & grooming support</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brandGreen mt-1"></i> Friendly companionship & emotional support</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brandGreen mt-1"></i> Wound management & dressing changes</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brandGreen mt-1"></i> Follow-up care visits</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brandGreen mt-1"></i> Scheduling doctor's appointments</li>
+                        </ul>
+                    </div>
+                    <a href="tel:0780236761" class="w-full text-center bg-slate-900 hover:bg-slate-800 text-white font-bold py-3 rounded-xl transition">Select Plan</a>
+                </div>
+
+                <!-- CarePlus Plan -->
+                <div class="bg-white border-2 border-brandBlue rounded-3xl p-8 flex flex-col justify-between shadow-xl relative">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brandBlue text-white text-xs font-bold px-4 py-1 rounded-full uppercase tracking-wider">
+                        Most Popular
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-2xl font-bold text-slate-900">CarePlus</h3>
+                            <span class="text-xs font-bold px-3 py-1 bg-emerald-100 text-emerald-800 rounded-full">24-Hour Care</span>
+                        </div>
+                        <p class="text-xs text-slate-500 mb-6">Designed for individuals requiring continuous daily assistance.</p>
+                        <div class="mb-6">
+                            <span class="text-3xl font-extrabold text-slate-900">UGX 75,000</span>
+                            <span class="text-slate-500 text-sm"> / 24 hrs</span>
+                        </div>
+                        <div class="p-3 bg-blue-50 rounded-xl text-xs font-semibold text-brandBlue mb-4">
+                            Includes everything in Care360 Plan, plus:
+                        </div>
+                        <ul class="space-y-3.5 text-xs sm:text-sm text-slate-600 mb-8">
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brandGreen mt-1"></i> Full 24-hour bedside nursing & monitoring</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brandGreen mt-1"></i> Weekly counseling session for patient/family</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brandGreen mt-1"></i> Priority emergency on-call response</li>
+                        </ul>
+                    </div>
+                    <a href="tel:0780236761" class="w-full text-center bg-brandBlue hover:bg-brandBlueDark text-white font-bold py-3 rounded-xl shadow-md transition">Select Plan</a>
+                </div>
+
+                <!-- CareElite Plan -->
+                <div class="bg-slate-50 border border-slate-200 rounded-3xl p-8 flex flex-col justify-between hover:border-brandRed transition">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-2xl font-bold text-slate-900">CareElite</h3>
+                            <span class="text-xs font-bold px-3 py-1 bg-red-100 text-brandRed rounded-full">Premium 24-Hour</span>
+                        </div>
+                        <p class="text-xs text-slate-500 mb-6">Comprehensive round-the-clock support with specialized health visits.</p>
+                        <div class="mb-6">
+                            <span class="text-3xl font-extrabold text-slate-900">UGX 100,000</span>
+                            <span class="text-slate-500 text-sm"> / 24 hrs</span>
+                        </div>
+                        <div class="p-3 bg-red-50 rounded-xl text-xs font-semibold text-brandRed mb-4">
+                            Includes everything in CarePlus, plus:
+                        </div>
+                        <ul class="space-y-3.5 text-xs sm:text-sm text-slate-600 mb-8">
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brandGreen mt-1"></i> Weekly consultation with a nutrition specialist</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brandGreen mt-1"></i> Physiotherapy sessions every other day</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brandGreen mt-1"></i> Continuous multi-specialist care alignment</li>
+                        </ul>
+                    </div>
+                    <a href="tel:0780236761" class="w-full text-center bg-slate-900 hover:bg-slate-800 text-white font-bold py-3 rounded-xl transition">Select Plan</a>
+                </div>
+
+            </div>
+
+            <!-- Pre/Post-Natal Packages View (Hidden by default) -->
+            <div id="mummy-packages" class="hidden grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                
+                <!-- Mummy12 Plan -->
+                <div class="bg-slate-50 border border-slate-200 rounded-3xl p-8 flex flex-col justify-between hover:border-brandBlue transition">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-2xl font-bold text-slate-900">Mummy12 Plan</h3>
+                            <span class="text-xs font-bold px-3 py-1 bg-blue-100 text-brandBlue rounded-full">12-Hour Day</span>
+                        </div>
+                        <p class="text-xs text-slate-500 mb-6">Daytime maternal & infant wellness support.</p>
+                        <div class="mb-6">
+                            <span class="text-3xl font-extrabold text-slate-900">UGX 50,000</span>
+                            <span class="text-slate-500 text-sm"> / day</span>
+                        </div>
+                        <ul class="space-y-3 text-xs sm:text-sm text-slate-600 mb-8">
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brandGreen mt-1"></i> Regular maternal vital-sign checks (pre & post-delivery)</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brandGreen mt-1"></i> Scheduled newborn monitoring during day window</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brandGreen mt-1"></i> Tailored recovery nutritional advice</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brandGreen mt-1"></i> Prenatal & postpartum appointment support</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brandGreen mt-1"></i> Guided light exercises for maternal wellbeing</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brandGreen mt-1"></i> Cleaning & care assistance for mother and infant</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brandGreen mt-1"></i> Practical feeding support for baby</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brandGreen mt-1"></i> Vaccination schedule oversight & alert system</li>
+                        </ul>
+                    </div>
+                    <a href="tel:0780236761" class="w-full text-center bg-slate-900 hover:bg-slate-800 text-white font-bold py-3 rounded-xl transition">Select Plan</a>
+                </div>
+
+                <!-- Mummy24 Plan -->
+                <div class="bg-white border-2 border-brandRed rounded-3xl p-8 flex flex-col justify-between shadow-xl">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <h3 class="text-2xl font-bold text-slate-900">Mummy24 Plan</h3>
+                            <span class="text-xs font-bold px-3 py-1 bg-red-100 text-brandRed rounded-full">24-Hour Care</span>
+                        </div>
+                        <p class="text-xs text-slate-500 mb-6">Around-the-clock newborn & maternal relief care.</p>
+                        <div class="mb-6">
+                            <span class="text-3xl font-extrabold text-slate-900">UGX 75,000</span>
+                            <span class="text-slate-500 text-sm"> / 24 hrs</span>
+                        </div>
+                        <div class="p-3 bg-red-50 rounded-xl text-xs font-semibold text-brandRed mb-4">
+                            Includes complete Mummy12 benefits for full 24 hours:
+                        </div>
+                        <ul class="space-y-3.5 text-xs sm:text-sm text-slate-600 mb-8">
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brandGreen mt-1"></i> Overnight infant monitoring & feeding assistance</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brandGreen mt-1"></i> Nighttime sleep relief for recovering mothers</li>
+                            <li class="flex items-start gap-2.5"><i class="fa-solid fa-check text-brandGreen mt-1"></i> Continuous vital sign tracking</li>
+                        </ul>
+                    </div>
+                    <a href="tel:0780236761" class="w-full text-center bg-brandRed hover:bg-red-700 text-white font-bold py-3 rounded-xl shadow-md transition">Select Plan</a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Emergency Callout Banner -->
+    <section class="bg-gradient-to-r from-brandBlue to-blue-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+            <div>
+                <h3 class="text-2xl sm:text-3xl font-extrabold">Need Immediate Care Assistance?</h3>
+                <p class="text-blue-100 mt-1">Our emergency on-call desk is reachable 24 hours a day, 7 days a week.</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="tel:0780236761" class="bg-brandRed hover:bg-red-700 text-white font-bold px-6 py-3.5 rounded-xl transition flex items-center gap-2 shadow-lg">
+                    <i class="fa-solid fa-phone"></i> Call 0780236761
+                </a>
+                <a href="https://wa.me/256705655889" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3.5 rounded-xl transition flex items-center gap-2 shadow-lg">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp 0705655889
+                </a>
             </div>
         </div>
     </section>
 
-    <footer class="bg-medicalDark text-slate-400 py-12 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8 mb-8">
-            <div class="space-y-4">
-                <span class="text-xl font-bold text-white">Arima Bedside Care</span>
-                <p class="text-sm leading-relaxed max-w-sm">Revolutionizing delivery models for home healthcare nursing solutions. Providing families peace of mind since 2025.</p>
-            </div>
-            <div>
-                <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Quick Navigation</h4>
-                <div class="grid grid-cols-2 gap-2 text-sm">
-                    <a href="#services" class="hover:text-white transition">Our Services</a>
-                    <a href="#pricing" class="hover:text-white transition">Pricing Plans</a>
-                    <a href="#book" class="hover:text-white transition">Consultation</a>
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12">
+                
+                <div class="lg:col-span-5 space-y-6">
+                    <div>
+                        <span class="text-brandBlue font-extrabold uppercase tracking-wider text-xs sm:text-sm">Reach Out</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-1">Contact Us Today</h2>
+                        <p class="text-slate-600 mt-2 text-sm sm:text-base">Get in touch to arrange care visits, consult with our team, or clarify package details.</p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 p-4 bg-white rounded-2xl border border-slate-100">
+                            <div class="w-10 h-10 bg-blue-50 text-brandBlue rounded-xl flex items-center justify-center text-lg flex-shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Physical Address</h4>
+                                <p class="text-slate-600 text-xs sm:text-sm">Whitlock Plaza RM24, Bukoto Kisaaso Rd, Kampala, Uganda</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 bg-white rounded-2xl border border-slate-100">
+                            <div class="w-10 h-10 bg-red-50 text-brandRed rounded-xl flex items-center justify-center text-lg flex-shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Phone Contacts</h4>
+                                <p class="text-slate-600 text-xs sm:text-sm">Direct Line: <a href="tel:0780236761" class="text-brandBlue font-medium">0780236761</a></p>
+                                <p class="text-slate-600 text-xs sm:text-sm">WhatsApp Line: <a href="https://wa.me/256705655889" class="text-emerald-600 font-medium">0705655889</a></p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 bg-white rounded-2xl border border-slate-100">
+                            <div class="w-10 h-10 bg-emerald-50 text-brandGreenDark rounded-xl flex items-center justify-center text-lg flex-shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Email Address</h4>
+                                <p class="text-slate-600 text-xs sm:text-sm"><a href="mailto:care@arimabedside.com" class="text-brandBlue font-medium">care@arimabedside.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 p-4 bg-white rounded-2xl border border-slate-100">
+                            <div class="w-10 h-10 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center text-lg flex-shrink-0">
+                                <i class="fa-regular fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Operating Hours</h4>
+                                <p class="text-slate-600 text-xs sm:text-sm">Standard Office Hours: 8:00 AM - 8:00 PM</p>
+                                <p class="text-slate-600 text-xs sm:text-sm font-semibold text-brandRed">Emergency Desk: 24/7 On-Call</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <h4 class="text-white font-bold text-sm uppercase tracking-wider mb-4">Connect Directly</h4>
-                <p class="text-sm mb-2"><i class="fa-solid fa-location-dot mr-2 text-medicalMint"></i> Kampala, Uganda</p>
-                <p class="text-sm"><i class="fa-solid fa-envelope mr-2 text-medicalMint"></i> info@arima.com</p>
+
+                <!-- Interactive Contact / Callback Form -->
+                <div class="lg:col-span-7 bg-white p-8 sm:p-10 rounded-3xl border border-slate-100 shadow-sm">
+                    <h3 class="text-2xl font-bold text-slate-900 mb-2">Request Care Consultation</h3>
+                    <p class="text-sm text-slate-500 mb-6">Leave us a message or request a quick call back regarding patient care.</p>
+                    
+                    <form onsubmit="event.preventDefault(); alert('Thank you for reaching out! Arima Bedside Care will contact you shortly.');" class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Your Full Name</label>
+                                <input type="text" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-brandBlue text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Phone Number</label>
+                                <input type="tel" required placeholder="0700 000 000" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-brandBlue text-sm">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Service Required</label>
+                            <select class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-brandBlue text-sm text-slate-700">
+                                <option>Bedside Nursing Care</option>
+                                <option>Elderly & Home Care</option>
+                                <option>Post-Surgery Recovery</option>
+                                <option>Palliative & Chronic Care</option>
+                                <option>Pre / Post-Natal Care</option>
+                                <option>General Consultation</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold uppercase text-slate-500 mb-1">How Can We Help?</label>
+                            <textarea rows="4" placeholder="Tell us briefly about the patient's condition or requirements..." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:border-brandBlue text-sm"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full bg-brandBlue hover:bg-brandBlueDark text-white font-bold py-3.5 rounded-xl transition shadow-md">
+                            Submit Care Request
+                        </button>
+                    </form>
+                </div>
+
             </div>
         </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-800 pt-8 text-center text-xs">
-            &copy; 2026 Arima Bedside Care. All rights reserved. Inspired by professional health-delivery structures.
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 pb-8 border-b border-slate-800">
+                <div class="md:col-span-2 space-y-4">
+                    <img src="arima logo@3x.jpg" alt="Arima Logo" class="h-12 w-auto object-contain bg-white p-1 rounded-lg">
+                    <p class="text-xs sm:text-sm text-slate-400 max-w-sm leading-relaxed">
+                        Arima Bedside Care offers empathetic, professional bedside nursing, elderly support, and maternal care across Kampala, Uganda.
+                    </p>
+                </div>
+                <div>
+                    <h5 class="text-white font-bold mb-3 text-sm">Quick Links</h5>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#about" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="#services" class="hover:text-white transition">Care Services</a></li>
+                        <li><a href="#packages" class="hover:text-white transition">Pricing Plans</a></li>
+                        <li><a href="#contact" class="hover:text-white transition">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-bold mb-3 text-sm">Connect With Us</h5>
+                    <div class="flex gap-3 text-lg mb-4">
+                        <a href="https://www.facebook.com/share/1E3b6BGngr/" target="_blank" class="w-9 h-9 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-brandBlue hover:text-white transition"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.tiktok.com/@arima.bedside.car?_r=1&_t=ZS-98FUNuHnE25" target="_blank" class="w-9 h-9 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-black hover:text-white transition"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://wa.me/256705655889" target="_blank" class="w-9 h-9 bg-slate-800 rounded-lg flex items-center justify-center hover:bg-emerald-600 hover:text-white transition"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <p class="text-xs text-slate-500">Kampala, Uganda</p>
+                </div>
+            </div>
+            <div class="pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+                <p>&copy; 2026 Arima Bedside Care. All rights reserved.</p>
+                <p>Compassionate Care At Your Bedside.</p>
+            </div>
         </div>
     </footer>
 
+    <!-- Mobile Menu & Tab Switching Script -->
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close Mobile Menu on link click
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Package Tab Switching
+        function switchTab(tab) {
+            const generalPkgs = document.getElementById('general-packages');
+            const mummyPkgs = document.getElementById('mummy-packages');
+            const generalBtn = document.getElementById('general-tab-btn');
+            const mummyBtn = document.getElementById('mummy-tab-btn');
+
+            if (tab === 'general') {
+                generalPkgs.classList.remove('hidden');
+                mummyPkgs.classList.add('hidden');
+                
+                generalBtn.classList.add('bg-white', 'text-brandBlue', 'shadow-sm');
+                generalBtn.classList.remove('text-slate-600');
+                
+                mummyBtn.classList.remove('bg-white', 'text-brandBlue', 'shadow-sm');
+                mummyBtn.classList.add('text-slate-600');
+            } else {
+                generalPkgs.classList.add('hidden');
+                mummyPkgs.classList.remove('hidden');
+
+                mummyBtn.classList.add('bg-white', 'text-brandBlue', 'shadow-sm');
+                mummyBtn.classList.remove('text-slate-600');
+
+                generalBtn.classList.remove('bg-white', 'text-brandBlue', 'shadow-sm');
+                generalBtn.classList.add('text-slate-600');
+            }
+        }
+    </script>
 </body>
 </html>
